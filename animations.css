@@ -1,0 +1,123 @@
+/* ===============================================
+   THE DARK WOOD — Animation Keyframes & Definitions
+   =============================================== */
+
+/* ---------- Film Grain ---------- */
+@keyframes grain {
+    0%, 100% { transform: translate(0, 0); }
+    10% { transform: translate(-5%, -10%); }
+    20% { transform: translate(-15%, 5%); }
+    30% { transform: translate(7%, -10%); }
+    40% { transform: translate(-5%, 15%); }
+    50% { transform: translate(-15%, 10%); }
+    60% { transform: translate(15%, 0%); }
+    70% { transform: translate(0%, 10%); }
+    80% { transform: translate(3%, -15%); }
+    90% { transform: translate(-10%, 5%); }
+}
+
+/* ---------- Shimmer Sweep ---------- */
+@keyframes shimmer-sweep {
+    0% { left: -100%; }
+    50% { left: 150%; }
+    100% { left: 150%; }
+}
+
+/* ---------- Scroll Indicator Bob ---------- */
+@keyframes scroll-bob {
+    0%, 100% { 
+        opacity: 0.3; 
+        transform: scaleY(0.6); 
+        transform-origin: top;
+    }
+    50% { 
+        opacity: 0.8; 
+        transform: scaleY(1); 
+        transform-origin: top;
+    }
+}
+
+/* ---------- Rotate Slow (Badge) ---------- */
+@keyframes rotate-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* ---------- Gold Pulse ---------- */
+@keyframes pulse-gold {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(201,168,76,0.6); }
+    50% { opacity: 0.8; box-shadow: 0 0 0 4px rgba(201,168,76,0); }
+}
+
+/* ---------- Shake ---------- */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+    20%, 40%, 60%, 80% { transform: translateX(4px); }
+}
+
+/* ---------- Pop In ---------- */
+@keyframes pop-in {
+    0% { transform: scale(0.5); opacity: 0; }
+    70% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* ---------- Float ---------- */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+}
+
+/* ---------- Particle Float ---------- */
+@keyframes particle-float {
+    0% {
+        transform: translateY(100vh) translateX(0) scale(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.6;
+        transform: translateY(90vh) translateX(10px) scale(1);
+    }
+    90% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(-10vh) translateX(-20px) scale(0.5);
+        opacity: 0;
+    }
+}
+
+/* ---------- Draw Line ---------- */
+@keyframes draw-line {
+    from { width: 0; }
+    to { width: 60px; }
+}
+
+/* ---------- Preloader Shimmer ---------- */
+@keyframes preloader-shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* ---------- Reduced Motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .grain-overlay { display: none; }
+    .hero__particles { display: none; }
+    .custom-cursor { display: none; }
+    body { cursor: auto; }
+    
+    .hero__cta-shimmer { display: none; }
+    .about__badge-svg { animation: none; }
+    
+    .service-card:hover { transform: none; }
+    .whyus-card:hover { transform: none; }
+    .portfolio__item:hover .portfolio__item-image { transform: none; }
+}

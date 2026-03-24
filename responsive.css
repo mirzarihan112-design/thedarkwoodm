@@ -1,0 +1,229 @@
+/* ===============================================
+   THE DARK WOOD — Responsive Breakpoints
+   =============================================== */
+
+/* ---------- Laptop / Small Desktop (≤1440px) ---------- */
+@media (max-width: 1440px) {
+    :root {
+        --container-width: min(1100px, 88vw);
+    }
+}
+
+/* ---------- Tablet Landscape (≤1024px) ---------- */
+@media (max-width: 1024px) {
+    .services__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .whyus__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--gap-md);
+    }
+    .contact__col--map {
+        grid-column: 1 / -1;
+    }
+    .about__grid {
+        gap: var(--gap-lg);
+    }
+}
+
+/* ---------- Tablet Portrait (≤768px) ---------- */
+@media (max-width: 768px) {
+    :root {
+        --navbar-height: 64px;
+    }
+
+    /* Navbar */
+    .navbar__links {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+
+    /* Custom cursor off on tablets */
+    .custom-cursor {
+        display: none;
+    }
+    body {
+        cursor: auto;
+    }
+    body * {
+        cursor: auto;
+    }
+
+    /* Hero */
+    .hero__title {
+        font-size: clamp(2rem, 7vw, 3.2rem);
+    }
+    .hero__subtitle {
+        font-size: 0.85rem;
+    }
+    .hero__change-btn {
+        bottom: 80px;
+        right: 20px;
+    }
+
+    /* About */
+    .about__grid {
+        grid-template-columns: 1fr;
+        gap: var(--gap-lg);
+    }
+    .about__visual {
+        order: -1;
+    }
+    .about__image {
+        aspect-ratio: 16/10;
+    }
+    .about__badge {
+        width: 100px;
+        height: 100px;
+        bottom: -20px;
+        right: -10px;
+    }
+
+    /* Services */
+    .services__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    .service-card {
+        padding: 28px 20px;
+    }
+
+    /* Portfolio */
+    .portfolio__grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    /* Why Us */
+    .whyus__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .whyus-card {
+        padding: 28px 20px;
+    }
+
+    /* Contact */
+    .contact__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Lightbox */
+    .lightbox__nav--prev { left: 8px; }
+    .lightbox__nav--next { right: 8px; }
+    .lightbox__nav {
+        width: 40px;
+        height: 40px;
+    }
+    .lightbox__close {
+        top: 16px;
+        right: 16px;
+    }
+
+    /* Modals */
+    .auth-modal__panel,
+    .upload-modal__panel {
+        min-width: unset;
+        width: 90vw;
+        padding: 28px;
+    }
+}
+
+/* ---------- Mobile (≤480px) ---------- */
+@media (max-width: 480px) {
+    .hero {
+        min-height: 100svh;
+    }
+    .hero__content {
+        padding: 0 16px;
+    }
+    .hero__title {
+        font-size: clamp(1.8rem, 8vw, 2.4rem);
+    }
+    .hero__cta {
+        padding: 14px 28px;
+        font-size: 0.75rem;
+    }
+    .hero__scroll-indicator {
+        bottom: 24px;
+    }
+
+    /* Section headings */
+    .section-heading {
+        font-size: clamp(1.6rem, 6vw, 2.2rem);
+    }
+
+    /* Services */
+    .services__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Why Us */
+    .whyus__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Portfolio */
+    .portfolio__grid {
+        grid-template-columns: 1fr;
+    }
+    .portfolio__section-header {
+        flex-direction: column;
+    }
+    .portfolio__upload-btn {
+        position: static;
+        margin-top: 12px;
+    }
+
+    /* Footer */
+    .footer__name {
+        font-size: 1.2rem;
+    }
+
+    /* Preloader */
+    .preloader__title {
+        font-size: 1.8rem;
+        letter-spacing: 0.1em;
+    }
+}
+
+/* ---------- Small Mobile (≤375px) ---------- */
+@media (max-width: 375px) {
+    :root {
+        --container-width: 92vw;
+    }
+
+    .hero__title {
+        font-size: 1.6rem;
+    }
+    .navbar__brand-name {
+        font-size: 1.1rem;
+    }
+    .service-card {
+        padding: 24px 16px;
+    }
+    .service-card__title {
+        font-size: 1.05rem;
+    }
+}
+
+/* ---------- Landscape Phone ---------- */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+    }
+    .hero__scroll-indicator {
+        display: none;
+    }
+    .hero__title {
+        font-size: 2rem;
+    }
+    .hero__subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+}

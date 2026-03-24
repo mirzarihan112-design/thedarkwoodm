@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE DARK WOOD Interiors & Decorators | Premium Wood CNC & Interior Solutions in Bharatpur, Rajasthan</title>
+    <meta name="description"
+        content="THE DARK WOOD Interiors & Decorators — Distinguished partnership firm in Bharatpur, Rajasthan specializing in premium wood CNC cutting, designer doors, modern furniture, and complete interior solutions.">
+    <meta property="og:title" content="THE DARK WOOD Interiors & Decorators | Premium Wood CNC & Interior Solutions">
+    <meta property="og:description"
+        content="Crafting excellence in wood & modern interiors. Premium CNC work, designer doors, bespoke furniture, and complete interior solutions in Bharatpur, Rajasthan.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/hero-default.png">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪵</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- ============ FILM GRAIN OVERLAY ============ -->
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+    <!-- ============ SCROLL PROGRESS BAR ============ -->
+    <div class="scroll-progress" aria-hidden="true">
+        <div class="scroll-progress__bar"></div>
+    </div>
+
+    <!-- ============ CUSTOM CURSOR ============ -->
+    <div class="custom-cursor" aria-hidden="true">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+        <div class="cursor-label"></div>
+    </div>
+
+    <!-- ============ PRELOADER ============ -->
+    <div id="preloader" class="preloader" aria-hidden="true">
+        <div class="preloader__content">
+            <div class="preloader__logo">
+                <span class="preloader__title">THE DARK WOOD</span>
+                <span class="preloader__subtitle">Interiors & Decorators</span>
+            </div>
+        </div>
+        <div class="preloader__curtain preloader__curtain--left"></div>
+        <div class="preloader__curtain preloader__curtain--right"></div>
+    </div>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar__container">
+            <a href="#hero" class="navbar__brand">
+                <span class="navbar__brand-name">THE DARK WOOD</span>
+                <span class="navbar__brand-tagline">Interiors & Decorators</span>
+            </a>
+            <div class="navbar__links" id="navLinks">
+                <a href="#about" class="nav-link" data-hover="About">About</a>
+                <a href="#services" class="nav-link" data-hover="Services">Services</a>
+                <a href="#portfolio" class="nav-link" data-hover="Portfolio">Portfolio</a>
+                <a href="#whyus" class="nav-link" data-hover="Why Us">Why Us</a>
+                <a href="#contact" class="nav-link" data-hover="Contact">Contact</a>
+            </div>
+            <div class="navbar__actions">
+                <button class="night-mode-toggle" id="nightModeToggle" aria-label="Toggle night mode"
+                    title="Toggle theme">
+                    <svg class="night-mode-icon night-mode-icon--moon" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                    <svg class="night-mode-icon night-mode-icon--sun" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5">
+                        <circle cx="12" cy="12" r="5" />
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                    </svg>
+                </button>
+                <button class="settings-btn" id="settingsBtn" aria-label="Admin settings" title="Admin Settings">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3" />
+                        <path
+                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                    </svg>
+                    <span class="admin-badge" id="adminBadge"></span>
+                </button>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ MOBILE MENU OVERLAY ============ -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__content">
+            <a href="#about" class="mobile-menu__link">About</a>
+            <a href="#services" class="mobile-menu__link">Services</a>
+            <a href="#portfolio" class="mobile-menu__link">Portfolio</a>
+            <a href="#whyus" class="mobile-menu__link">Why Us</a>
+            <a href="#contact" class="mobile-menu__link">Contact</a>
+        </div>
+    </div>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section id="hero" class="hero">
+        <div class="hero__content">
+            <span class="hero__label">ESTABLISHED IN BHARATPUR, RAJASTHAN</span>
+            <h1 class="hero__company-name">THE DARK WOOD</h1>
+            <p class="hero__company-tagline">Interiors & Decorators</p>
+            <p class="hero__subtitle">Premium Wood CNC Work · Designer Doors · CNC Door Designs · Modern Furniture · CNC
+                Custom Woodwork · Complete Interior Solutions</p>
+            <a href="#portfolio" class="hero__cta magnetic-btn">
+                <span class="hero__cta-text">Explore Our Craft</span>
+                <span class="hero__cta-fill"></span>
+                <span class="hero__cta-shimmer"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-label anim-reveal">
+                <span class="section-label__text">OUR STORY</span>
+                <span class="section-label__line anim-draw-line"></span>
+            </div>
+            <div class="about__grid">
+                <div class="about__text">
+                    <h2 class="section-heading anim-split-words">About THE DARK WOOD Interiors & Decorators</h2>
+                    <p class="anim-reveal">We are a distinguished partnership firm based in Bharatpur, Rajasthan,
+                        dedicated to transforming spaces through exceptional woodcraft and contemporary interior
+                        solutions.</p>
+                    <p class="anim-reveal">With years of expertise in precision wood CNC cutting, CNC door
+                        craftsmanship, and bespoke design, we have established ourselves as the preferred choice for
+                        discerning clients across Rajasthan. Our comprehensive portfolio spans designer modern and
+                        traditional wooden doors, CNC-crafted custom woodwork, bespoke furniture manufacturing, and
+                        complete contract-based interior solutions.</p>
+                    <p class="anim-reveal">At THE DARK WOOD, we believe that every space tells a story. Our commitment
+                        to durability, finishing excellence, and competitive pricing ensures that your vision is
+                        realized without compromise. From individual pieces to full-site interior contracts, we deliver
+                        craftsmanship that stands the test of time.</p>
+                    <div class="about__founders anim-reveal">
+                        <span class="about__founders-label">Founded by</span>
+                        <span class="about__founders-names">Mohd. Akram · Devesh Kumar · Rohit Bansal</span>
+                    </div>
+                </div>
+                <div class="about__visual">
+                    <div class="about__image-wrapper anim-clip-reveal">
+                        <img src="assets/hero-default.png" alt="THE DARK WOOD workshop craftsmanship"
+                            class="about__image" loading="lazy">
+                    </div>
+                    <div class="about__badge anim-reveal" aria-hidden="true">
+                        <svg viewBox="0 0 200 200" class="about__badge-svg">
+                            <defs>
+                                <path id="circlePath" d="M100,100 m-75,0 a75,75 0 1,1 150,0 a75,75 0 1,1 -150,0" />
+                            </defs>
+                            <text>
+                                <textPath href="#circlePath" class="about__badge-text">
+                                    Premium Craftsmanship · Since Bharatpur · Premium Craftsmanship · Since Bharatpur ·
+                                </textPath>
+                            </text>
+                        </svg>
+                        <span class="about__badge-icon">🪵</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SERVICES SECTION ============ -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-label anim-reveal">
+                <span class="section-label__text">WHAT WE DO</span>
+                <span class="section-label__line anim-draw-line"></span>
+            </div>
+            <h2 class="section-heading anim-split-words">Our Expertise</h2>
+            <p class="section-subtext anim-reveal">Comprehensive wood and interior solutions crafted with precision and
+                delivered with excellence</p>
+            <div class="services__grid">
+                <div class="service-card anim-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="6" y="6" width="36" height="36" rx="4" />
+                            <path d="M6 24h36M24 6v36" />
+                            <path d="M12 12l6 6M30 12l6 6M12 30l6 6M30 30l6 6" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Wood CNC Cutting & Design</h3>
+                    <p class="service-card__desc">State-of-the-art CNC technology for precision cutting, intricate
+                        patterns, and flawless geometric designs in premium wood.</p>
+                </div>
+                <div class="service-card anim-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="10" y="4" width="28" height="40" rx="3" />
+                            <line x1="24" y1="4" x2="24" y2="44" />
+                            <circle cx="18" cy="20" r="2" />
+                            <circle cx="30" cy="20" r="2" />
+                            <path d="M14 8h20M14 40h20" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">CNC Door Craftsmanship</h3>
+                    <p class="service-card__desc">Precision-engineered CNC-cut doors featuring intricate patterns,
+                        geometric perfection, and architectural-grade detailing for entrances that command attention.
+                    </p>
+                </div>
+                <div class="service-card anim-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8 40V16l16-12 16 12v24H8z" />
+                            <path d="M18 40V28h12v12" />
+                            <path d="M14 22h4v4h-4zM30 22h4v4h-4z" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">CNC Custom Woodwork</h3>
+                    <p class="service-card__desc">Bespoke CNC-machined wood creations — from decorative wall panels and
+                        carved accents to custom architectural elements tailored to your exact specifications.</p>
+                </div>
+                <div class="service-card anim-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="12" y="4" width="24" height="40" rx="4" />
+                            <path d="M12 10h24M12 38h24" />
+                            <circle cx="24" cy="24" r="6" />
+                            <path d="M20 24l3 3 5-6" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Designer Wooden Doors</h3>
+                    <p class="service-card__desc">Exquisite entrance and interior doors combining traditional
+                        craftsmanship with contemporary aesthetics for lasting impressions.</p>
+                </div>
+                <div class="service-card anim-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M6 38h36" />
+                            <path d="M10 38V22h28v16" />
+                            <rect x="16" y="26" width="16" height="8" rx="2" />
+                            <path d="M14 22l10-10 10 10" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Modern Furniture Manufacturing</h3>
+                    <p class="service-card__desc">Bespoke furniture pieces designed for modern living, combining
+                        functionality with sophisticated design language.</p>
+                </div>
+                <div class="service-card anim-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="8" y="12" width="32" height="24" rx="3" />
+                            <path d="M8 20h32" />
+                            <rect x="14" y="24" width="8" height="8" rx="1" />
+                            <line x1="28" y1="26" x2="34" y2="26" />
+                            <line x1="28" y1="30" x2="34" y2="30" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Custom Bedroom Sets & Wardrobes</h3>
+                    <p class="service-card__desc">Tailored bedroom solutions including beds, wardrobes, and dressers
+                        designed to maximize space and elevate aesthetics.</p>
+                </div>
+                <div class="service-card anim-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="4" y="8" width="16" height="32" rx="2" />
+                            <rect x="24" y="8" width="20" height="16" rx="2" />
+                            <rect x="24" y="28" width="20" height="12" rx="2" />
+                            <line x1="12" y1="16" x2="12" y2="32" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Modular Interior Solutions</h3>
+                    <p class="service-card__desc">Flexible modular systems for kitchens, living spaces, and offices that
+                        adapt to your lifestyle and evolving needs.</p>
+                </div>
+                <div class="service-card anim-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 44V12l8-8h24l8 8v32" />
+                            <path d="M4 12h40" />
+                            <rect x="14" y="20" width="20" height="16" rx="2" />
+                            <path d="M20 20v16M28 20v16M14 28h20" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Full-Site Interior Contract Work</h3>
+                    <p class="service-card__desc">End-to-end interior solutions for residential and commercial projects,
+                        from concept to completion under one roof.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PORTFOLIO SECTION ============ -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <div class="section-label anim-reveal">
+                <span class="section-label__text">OUR WORK</span>
+                <span class="section-label__line anim-draw-line"></span>
+            </div>
+            <h2 class="section-heading anim-split-words">Selected Projects & Creations</h2>
+            <p class="section-subtext anim-reveal">A curated showcase of our finest craftsmanship, on-site
+                transformations, and precision CNC artistry.</p>
+
+            <!-- Sub-Section 5A: Installations -->
+            <div class="portfolio__section" id="installationsSection">
+                <div class="portfolio__section-header">
+                    <h3 class="portfolio__section-title anim-split-words">Executed Project Installations</h3>
+                    <p class="portfolio__section-subtitle anim-reveal">On-location interior transformations — from
+                        concept through final handover</p>
+                    <button class="portfolio__upload-btn admin-only" id="uploadInstallationsBtn"
+                        data-category="installations" style="display:none;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <line x1="12" y1="5" x2="12" y2="19" />
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                        </svg>
+                        <span>Upload</span>
+                    </button>
+                </div>
+                <div class="portfolio__grid" id="installationsGrid">
+                    <!-- 10 placeholder slots — replaced by Firebase images when uploaded -->
+                    <div class="portfolio__slot" data-slot="1">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">01</span><span
+                                class="portfolio__slot-label">Upload Project</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="2">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">02</span><span
+                                class="portfolio__slot-label">Upload Project</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="3">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">03</span><span
+                                class="portfolio__slot-label">Upload Project</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="4">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">04</span><span
+                                class="portfolio__slot-label">Upload Project</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="5">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">05</span><span
+                                class="portfolio__slot-label">Upload Project</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="6">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">06</span><span
+                                class="portfolio__slot-label">Upload Project</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="7">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">07</span><span
+                                class="portfolio__slot-label">Upload Project</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="8">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">08</span><span
+                                class="portfolio__slot-label">Upload Project</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="9">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">09</span><span
+                                class="portfolio__slot-label">Upload Project</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="10">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">10</span><span
+                                class="portfolio__slot-label">Upload Project</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gold Divider -->
+            <div class="portfolio__divider anim-reveal" aria-hidden="true">
+                <span class="portfolio__divider-line"></span>
+                <span class="portfolio__divider-icon">◆</span>
+                <span class="portfolio__divider-line"></span>
+            </div>
+
+            <!-- Sub-Section 5B: CNC Products -->
+            <div class="portfolio__section" id="cncSection">
+                <div class="portfolio__section-header">
+                    <h3 class="portfolio__section-title anim-split-words">CNC Creations & Product Showcase</h3>
+                    <p class="portfolio__section-subtitle anim-reveal">Precision-crafted CNC work, custom woodwork,
+                        doors, and furniture pieces from our workshop</p>
+                    <button class="portfolio__upload-btn admin-only" id="uploadCncBtn" data-category="cnc-products"
+                        style="display:none;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <line x1="12" y1="5" x2="12" y2="19" />
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                        </svg>
+                        <span>Upload</span>
+                    </button>
+                </div>
+                <div class="portfolio__grid" id="cncGrid">
+                    <!-- 10 placeholder slots — replaced by Firebase images when uploaded -->
+                    <div class="portfolio__slot" data-slot="1">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">01</span><span
+                                class="portfolio__slot-label">Upload Creation</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="2">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">02</span><span
+                                class="portfolio__slot-label">Upload Creation</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="3">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">03</span><span
+                                class="portfolio__slot-label">Upload Creation</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="4">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">04</span><span
+                                class="portfolio__slot-label">Upload Creation</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="5">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">05</span><span
+                                class="portfolio__slot-label">Upload Creation</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="6">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">06</span><span
+                                class="portfolio__slot-label">Upload Creation</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="7">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">07</span><span
+                                class="portfolio__slot-label">Upload Creation</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="8">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">08</span><span
+                                class="portfolio__slot-label">Upload Creation</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="9">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">09</span><span
+                                class="portfolio__slot-label">Upload Creation</span></div>
+                    </div>
+                    <div class="portfolio__slot" data-slot="10">
+                        <div class="portfolio__slot-inner"><span class="portfolio__slot-num">10</span><span
+                                class="portfolio__slot-label">Upload Creation</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ WHY US SECTION ============ -->
+    <section id="whyus" class="section whyus">
+        <div class="container">
+            <div class="section-label anim-reveal">
+                <span class="section-label__text">OUR PROMISE</span>
+                <span class="section-label__line anim-draw-line"></span>
+            </div>
+            <h2 class="section-heading anim-split-words">Why Choose Us</h2>
+            <p class="section-subtext anim-reveal">Six pillars that define our commitment to excellence</p>
+            <div class="whyus__grid">
+                <div class="whyus-card anim-card">
+                    <div class="whyus-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="24" cy="24" r="18" />
+                            <path d="M16 24l5 5 11-11" />
+                        </svg>
+                    </div>
+                    <h3 class="whyus-card__title">Precision Craftsmanship</h3>
+                    <p class="whyus-card__desc">Every cut, joint, and finish executed with meticulous attention to
+                        detail</p>
+                </div>
+                <div class="whyus-card anim-card">
+                    <div class="whyus-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4l6 12h14l-10 8 4 14-14-8-14 8 4-14L4 16h14z" />
+                        </svg>
+                    </div>
+                    <h3 class="whyus-card__title">Premium Materials</h3>
+                    <p class="whyus-card__desc">Sourced from trusted suppliers ensuring durability and natural beauty
+                    </p>
+                </div>
+                <div class="whyus-card anim-card">
+                    <div class="whyus-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 38V10h24v28" />
+                            <path d="M8 38h32" />
+                            <path d="M20 18h8M20 24h8M20 30h4" />
+                        </svg>
+                    </div>
+                    <h3 class="whyus-card__title">Competitive Pricing</h3>
+                    <p class="whyus-card__desc">Luxury quality without the luxury markup through efficient processes</p>
+                </div>
+                <div class="whyus-card anim-card">
+                    <div class="whyus-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="8" y="8" width="32" height="32" rx="6" />
+                            <path d="M18 20v8l6-4zM26 20h4M26 24h6M26 28h3" />
+                        </svg>
+                    </div>
+                    <h3 class="whyus-card__title">Modern Designs</h3>
+                    <p class="whyus-card__desc">Contemporary aesthetics that complement today's architectural vision</p>
+                </div>
+                <div class="whyus-card anim-card">
+                    <div class="whyus-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="24" cy="24" r="18" />
+                            <path d="M24 12v12l8 4" />
+                        </svg>
+                    </div>
+                    <h3 class="whyus-card__title">On-Time Completion</h3>
+                    <p class="whyus-card__desc">Project timelines honored through systematic planning and execution</p>
+                </div>
+                <div class="whyus-card anim-card">
+                    <div class="whyus-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="24" cy="14" r="8" />
+                            <path d="M10 40c0-8 6-14 14-14s14 6 14 14" />
+                        </svg>
+                    </div>
+                    <h3 class="whyus-card__title">Experienced Team</h3>
+                    <p class="whyus-card__desc">Skilled artisans and designers with decades of combined expertise</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-label anim-reveal">
+                <span class="section-label__text">FIND US</span>
+                <span class="section-label__line anim-draw-line"></span>
+            </div>
+            <h2 class="section-heading anim-split-words">Get In Touch</h2>
+            <div class="contact__grid">
+                <div class="contact__col anim-reveal">
+                    <h3 class="contact__col-title">Our Workshop & Showroom</h3>
+                    <div class="contact__info">
+                        <p class="contact__company">THE DARK WOOD INTERIORS AND DECORATORS</p>
+                        <p>Near Railway Station, Bharatpur,<br>Rajasthan, India</p>
+                        <div class="contact__hours">
+                            <p><strong>Working Hours</strong></p>
+                            <p>Monday – Saturday: 9:00 AM to 8:00 PM</p>
+                            <p>Sunday: By Appointment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__col anim-reveal">
+                    <h3 class="contact__col-title">Contact Information</h3>
+                    <p class="contact__subtitle">Reach out to discuss your project requirements</p>
+                    <div class="contact__details">
+                        <a href="mailto:contact.thedarkwood@gmail.com" class="contact__link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="M22 4L12 13 2 4" />
+                            </svg>
+                            contact.thedarkwood@gmail.com
+                        </a>
+                        <a href="tel:+918385937146" class="contact__link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            +91 8385937146
+                        </a>
+                    </div>
+                    <div class="contact__partners">
+                        <p><strong>Partners</strong></p>
+                        <p>Mohd. Akram · Devesh Kumar · Rohit Bansal</p>
+                    </div>
+                </div>
+                <div class="contact__col contact__col--map anim-reveal">
+                    <h3 class="contact__col-title">Location</h3>
+                    <div class="contact__map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56642.49056129747!2d77.46734437832026!3d27.21736379999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39737003a41a3855%3A0xd6f2ed08e1e5cbe!2sBharatpur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                            class="contact__map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="THE DARK WOOD location on Google Maps" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer anim-reveal">
+        <div class="container">
+            <div class="footer__brand">
+                <span class="footer__name">THE DARK WOOD</span>
+                <span class="footer__tagline">Interiors & Decorators</span>
+                <span class="footer__location">Bharatpur, Rajasthan, India</span>
+            </div>
+            <div class="footer__divider"></div>
+            <p class="footer__copy">© 2024 THE DARK WOOD INTERIORS AND DECORATORS. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ============ ADMIN AUTH MODAL ============ -->
+    <div class="auth-modal" id="authModal">
+        <div class="auth-modal__backdrop"></div>
+        <div class="auth-modal__panel">
+            <button class="auth-modal__close" id="authModalClose">&times;</button>
+            <h3 class="auth-modal__title">Admin Access</h3>
+            <div class="auth-modal__body" id="authBody">
+                <label for="accessCode" class="auth-modal__label">Enter Access Code</label>
+                <input type="password" id="accessCode" class="auth-modal__input" placeholder="••••••"
+                    autocomplete="off">
+                <button class="auth-modal__verify" id="verifyBtn">Verify</button>
+            </div>
+            </div>
+            <div class="auth-modal__success" id="authSuccess" style="display:none;">
+                <div class="auth-modal__check">✓</div>
+                <p>Admin access granted</p>
+                <button class="auth-modal__logout" id="logoutBtn">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ UPLOAD MODAL ============ -->
+    <div class="upload-modal" id="uploadModal">
+        <div class="upload-modal__backdrop"></div>
+        <div class="upload-modal__panel">
+            <button class="upload-modal__close" id="uploadModalClose">&times;</button>
+            <h3 class="upload-modal__title">Upload Images</h3>
+            <p class="upload-modal__category" id="uploadCategory"></p>
+            <div class="upload-modal__dropzone" id="dropzone">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M24 32V16M16 22l8-8 8 8" />
+                    <rect x="6" y="6" width="36" height="36" rx="6" />
+                </svg>
+                <p>Drag & drop images or click to browse</p>
+                <input type="file" id="uploadFileInput" multiple accept="image/*">
+            </div>
+            <div class="upload-modal__previews" id="uploadPreviews"></div>
+            <div class="upload-modal__progress" id="uploadProgress" style="display:none;">
+                <div class="upload-modal__progress-bar">
+                    <div class="upload-modal__progress-fill" id="uploadProgressFill"></div>
+                </div>
+                <span class="upload-modal__progress-text" id="uploadProgressText">Uploading...</span>
+            </div>
+            <button class="upload-modal__submit" id="uploadSubmitBtn" disabled>Upload Selected</button>
+        </div>
+    </div>
+
+    <!-- ============ LIGHTBOX ============ -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox__backdrop"></div>
+        <button class="lightbox__close" id="lightboxClose">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+        </button>
+        <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous image">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6" />
+            </svg>
+        </button>
+        <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next image">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 6 15 12 9 18" />
+            </svg>
+        </button>
+        <div class="lightbox__image-wrapper">
+            <img src="" alt="" class="lightbox__image" id="lightboxImage">
+        </div>
+    </div>
+
+    <!-- ============ SCRIPTS ============ -->
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <!-- SplitType -->
+    <script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>
+    <!-- Firebase SDKs (Compat) -->
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-storage-compat.js"></script>
+    <!-- Firebase Config & Logic -->
+    <script src="js/firebase.js"></script>
+    <!-- App Scripts -->
+    <script src="js/cursor.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/nightmode.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
