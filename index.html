@@ -674,15 +674,14 @@
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-storage-compat.js"></script>
-    <!-- Firebase Config & Logic -->
-    <script src="js/firebase.js"></script>
-    <!-- App Scripts -->
+<!-- JS (order matters: core first, then libs, app last) -->
+    <script src="js/firebase.js"></script> <!-- Firebase config/init -->
     <script src="js/cursor.js"></script>
-    <script src="js/animations.js"></script>
     <script src="js/lightbox.js"></script>
-    <script src="js/admin.js"></script>
     <script src="js/nightmode.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/admin.js"></script> <!-- Password/upload logic -->
+    <script src="js/app.js"></script> <!-- Main app -->
 </body>
 
 </html>
